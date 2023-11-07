@@ -74,7 +74,7 @@ const Header = () => {
   };
 
   return (
-    <section className="sticky left-0 right-0 top-0 z-50">
+    <section className="sticky left-0 right-0 top-0 z-50 bg-white">
       <header className="container mx-auto px-5 flex justify-between py-4">
         <div className="flex items-center">
           <img src={images.Logo} alt="Logo" />

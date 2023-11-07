@@ -6,10 +6,10 @@ const Hero = () => {
   return (
     <section className="container mx-auto flex flex-col px-5 py-5 lg:flex-row">
       <div className="mt-10 lg:w-1/2">
-        <h1 className="font-roboto text-3xl font-bold text-center text-dark-soft md:text-5xl lg:text-left max-w-[540px] mx-auto lg:mx-0">
+        <h1 className="font-roboto text-3xl font-bold text-center text-dark-soft lg:text-4xl xl:text-5xl lg:text-left max-w-[540px] mx-auto lg:mx-0">
           Read the most interesting articles
         </h1>
-        <p className="text-dark-light mt-4 text-center md:text-xl lg:text-left">
+        <p className="text-dark-light mt-4 text-center md:text-xl lg:text-left lg:text-base xl:text-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
