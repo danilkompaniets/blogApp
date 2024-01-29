@@ -80,14 +80,13 @@ const ArticleDetailPage = () => {
               lectus proin.
             </p>
           </div>
-          <CommentsContainer className="mt-10" />
+          <CommentsContainer className="mt-10" LogginedUserId={"a"} />
         </article>
-
         <SugesstedPosts
           posts={postsData}
           header={"Latest Article"}
           tags={tagsData}
-          className={"mt-8 lg:mt-0 lg:max-w-xs  "}
+          className={"mt-8 lg:mt-0 lg:max-w-xs lg:h-fit  "}
         />
       </section>
     </MainLayout>
