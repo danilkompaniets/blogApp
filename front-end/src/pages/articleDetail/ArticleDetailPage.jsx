@@ -5,6 +5,7 @@ import { images } from "../../constants";
 import { Link } from "react-router-dom";
 import SugesstedPosts from "./container/SugesstedPosts";
 import CommentsContainer from "../../components/comments/CommentsContainer";
+import SocialShareButtons from "../../components/SocialShareButtons";
 
 const BreadCrumbsData = [
   { name: "Home", link: "/" },
@@ -82,12 +83,25 @@ const ArticleDetailPage = () => {
           </div>
           <CommentsContainer className="mt-10" LogginedUserId={"a"} />
         </article>
-        <SugesstedPosts
-          posts={postsData}
-          header={"Latest Article"}
-          tags={tagsData}
-          className={"mt-8 lg:mt-0 lg:max-w-xs lg:h-fit  "}
-        />
+        <div className="flex flex-col gap-y-6 ">
+          <SugesstedPosts
+            posts={postsData}
+            header={"Latest Article"}
+            tags={tagsData}
+            className={"mt-8 lg:mt-0 lg:max-w-xs lg:h-fit  "}
+          />
+          <div className="mt-7 ">
+            <h2 className="font-roboto font-medium text-dark-hard mb-4 md:text-xl">
+              Share on:
+            </h2>
+            <SocialShareButtons
+              url={encodeURI(
+                `https://www.youtube.com/watch?v=EXpUq42ff8U&list=PLhaS1k1mPiCO878vo-9xFJAlUfcz9dMv2&index=11`
+              )}
+              title={encodeURIComponent("MERN stack blog app")}
+            />
+          </div>
+        </div>
       </section>
     </MainLayout>
   );
